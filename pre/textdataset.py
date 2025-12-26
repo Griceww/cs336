@@ -3,7 +3,7 @@ import torch
 INPUT_IDS_KEY: str = "input_ids"
 LABELS_KEY: str = "labels"
 
-class TextDataset :
+class TextDataset(torch.utils.data.Dataset) :
     _tokens : torch.Tensor
     _seq_len : int
     _stride : int
